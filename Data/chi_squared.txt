@@ -1,0 +1,9 @@
+X^2 (5 dof) of Interarrival (B) being exp(0.7444444444444446): 3.99102448660695
+
+X^2 (5 dof) of Interarrival (I) being exp(2.3633333333333337): 9.400693754516942
+
+X^2 (5 dof) of Finishing being exp(0.9494444444444446): 5.542148946702595
+
+X^2 (5 dof) of Toppings being U(0.36666666666666664, 3.0): 4.4
+
+X^2 (5 dof) of Cooking being U(2.933333333333333, 5.933333333333334): 4.4
