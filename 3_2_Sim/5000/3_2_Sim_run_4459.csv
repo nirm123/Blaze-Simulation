@@ -1,0 +1,139 @@
+    Time	  Event	 Count	  SERVICE[ID[7]]	   SYSTEM[ID[7]]	        RATIO[0]	          RATIO[3] 
+    0.000	   INIT	     1 	  0.685 	   5.61 	      0 	      0 
+    5.446	 DELIVER	     1 	   1.89 	   5.36 	      0 	      0 
+   10.222	 DELIVER	     2 	   2.31 	   7.45 	      0 	      0 
+   10.407	 DELIVER	     3 	   1.47 	    5.6 	      0 	      0 
+   13.416	 DELIVER	     4 	   1.23 	    5.9 	      0 	      0 
+   14.839	 DELIVER	     5 	  0.797 	   5.78 	      0 	      0 
+   16.096	 DELIVER	     6 	   2.97 	   7.14 	      0 	      0 
+   16.867	 DELIVER	     7 	   2.33 	   7.82 	      0 	      0 
+   22.505	 DELIVER	     8 	   1.92 	   7.58 	      0 	      0 
+   28.149	 DELIVER	     9 	   2.91 	   6.77 	      0 	      0 
+   29.694	 DELIVER	    10 	  0.606 	   7.84 	      0 	      0 
+   32.679	 DELIVER	    11 	   2.17 	   7.12 	      0 	      0 
+   32.877	 DELIVER	    12 	   0.82 	   4.47 	      0 	      0 
+   34.085	 DELIVER	    13 	   1.48 	   5.36 	      0 	      0 
+   34.138	 DELIVER	    14 	   1.21 	   7.33 	      0 	      0 
+   39.063	 DELIVER	    15 	   2.79 	   7.63 	      0 	      0 
+   41.408	 DELIVER	    16 	    2.4 	   7.22 	      0 	      0 
+   42.740	 DELIVER	    17 	   1.37 	   5.46 	      0 	      0 
+   45.217	 DELIVER	    18 	  0.708 	   8.23 	      0 	      0 
+   46.239	 DELIVER	    19 	  0.881 	   5.29 	      0 	      0 
+   48.924	 DELIVER	    20 	   1.33 	   7.89 	      0 	      0 
+   49.174	 DELIVER	    21 	   1.36 	   6.27 	      0 	      0 
+   51.717	 DELIVER	    22 	   1.92 	   8.39 	      0 	      0 
+   58.244	 DELIVER	    23 	   2.18 	   6.39 	      0 	      0 
+   60.077	 DELIVER	    24 	   1.85 	   7.78 	      0 	      0 
+   60.579	 DELIVER	    25 	  0.372 	   6.27 	      0 	      0 
+   61.423	 DELIVER	    26 	   2.34 	   7.92 	      0 	      0 
+   61.927	 DELIVER	    27 	   1.04 	    7.6 	      0 	      0 
+   62.886	 DELIVER	    28 	   2.99 	   8.37 	      0 	      0 
+   64.774	 DELIVER	    29 	   1.07 	   10.1 	      0 	      0 
+   65.050	 DELIVER	    30 	   2.22 	   12.2 	      0 	      0 
+   65.346	 DELIVER	    31 	   1.55 	   9.37 	      0 	      0 
+   65.353	 DELIVER	    32 	   1.64 	   8.33 	      0 	      0 
+   66.895	 DELIVER	    33 	  0.629 	     11 	      0 	      0 
+   67.267	 DELIVER	    34 	    2.7 	   7.75 	      0 	      0 
+   67.773	 DELIVER	    35 	   1.46 	   7.91 	      0 	      0 
+   68.886	 DELIVER	    36 	  0.632 	   8.87 	      0 	      0 
+   69.165	 DELIVER	    37 	   1.79 	   11.5 	      0 	      0 
+   69.516	 DELIVER	    38 	   1.05 	   5.37 	      0 	      0 
+   70.365	 DELIVER	    39 	   1.51 	   4.65 	      0 	      0 
+   72.328	 DELIVER	    40 	  0.627 	   5.39 	      0 	      0 
+   74.420	 DELIVER	    41 	   2.13 	   6.77 	      0 	      0 
+   76.262	 DELIVER	    42 	   2.36 	   9.94 	      0 	      0 
+   76.342	 DELIVER	    43 	   1.36 	   7.32 	      0 	      0 
+   76.720	 DELIVER	    44 	   2.78 	   5.83 	      0 	      0 
+   76.869	 DELIVER	    45 	  0.506 	   5.14 	      0 	      0 
+   79.358	 DELIVER	    46 	   1.64 	   5.14 	      0 	      0 
+   81.190	 DELIVER	    47 	   1.54 	   9.34 	      0 	      0 
+   81.594	 DELIVER	    48 	   2.17 	   8.86 	      0 	      0 
+   82.700	 DELIVER	    49 	   1.06 	   7.13 	      0 	      0 
+   83.230	 DELIVER	    50 	   1.96 	   7.07 	      0 	      0 
+   84.051	 DELIVER	    51 	   1.71 	   8.24 	      0 	      0 
+   84.555	 DELIVER	    52 	   2.09 	   7.59 	      0 	      0 
+   84.780	 DELIVER	    53 	   1.58 	    5.4 	      0 	      0 
+   87.058	 DELIVER	    54 	   1.51 	   8.15 	      0 	      0 
+   87.862	 DELIVER	    55 	  0.501 	   7.89 	      0 	      0 
+   88.121	 DELIVER	    56 	    2.8 	   9.25 	      0 	      0 
+   89.008	 DELIVER	    57 	  0.977 	   6.28 	      0 	      0 
+   89.601	 DELIVER	    58 	  0.617 	   7.34 	      0 	      0 
+   89.891	 DELIVER	    59 	   1.63 	   5.57 	      0 	      0 
+   90.070	 DELIVER	    60 	    2.2 	    9.7 	      0 	      0 
+   95.612	 DELIVER	    61 	   0.53 	   5.86 	      0 	      0 
+   97.421	 DELIVER	    62 	  0.539 	   6.86 	      0 	      0 
+   97.674	 DELIVER	    63 	   1.19 	   6.35 	      0 	      0 
+   98.414	 DELIVER	    64 	   1.22 	   4.84 	      0 	      0 
+   98.680	 DELIVER	    65 	   2.34 	   8.23 	      0 	      0 
+   99.091	 DELIVER	    66 	    2.8 	   5.96 	      0 	      0 
+  100.900	 DELIVER	    67 	   1.52 	   6.08 	      0 	      0 
+  101.530	 DELIVER	    68 	  0.497 	   4.07 	      0 	      0 
+  101.547	 DELIVER	    69 	   1.96 	   8.76 	      0 	      0 
+  106.556	 DELIVER	    70 	  0.827 	   4.25 	      0 	      0 
+  107.764	 DELIVER	    71 	   1.94 	    7.7 	      0 	      0 
+  110.243	 DELIVER	    72 	   2.05 	   6.36 	      0 	      0 
+  115.977	 DELIVER	    73 	   1.95 	   6.75 	      0 	      0 
+  118.969	 DELIVER	    74 	   2.94 	     11 	      0 	      0 
+  119.169	 DELIVER	    75 	   2.84 	   6.74 	      0 	      0 
+  119.220	 DELIVER	    76 	   1.44 	   6.28 	      0 	      0 
+  119.713	 DELIVER	    77 	   2.08 	    7.6 	      0 	      0 
+  121.184	 DELIVER	    78 	   2.01 	   6.49 	      0 	      0 
+  121.223	 DELIVER	    79 	  0.864 	   5.14 	      0 	      0 
+  121.678	 DELIVER	    80 	   1.27 	   5.48 	      0 	      0 
+  121.851	 DELIVER	    81 	   1.27 	   6.19 	      0 	      0 
+  125.027	 DELIVER	    82 	   1.49 	   7.46 	      0 	      0 
+  125.154	 DELIVER	    83 	   1.86 	   8.31 	      0 	      0 
+  126.342	 DELIVER	    84 	    1.3 	   8.85 	      0 	      0 
+  126.367	 DELIVER	    85 	   1.49 	    119 	      0 	      0 
+  127.367	 DELIVER	    86 	   2.96 	   8.86 	      0 	      0 
+  127.742	 DELIVER	    87 	   1.27 	   7.19 	      0 	      0 
+  129.424	 DELIVER	    88 	   0.56 	   8.49 	      0 	      0 
+  130.503	 DELIVER	    89 	   2.96 	    122 	      0 	      0 
+  132.996	 DELIVER	    90 	   2.24 	   7.26 	      0 	      0 
+  133.010	 DELIVER	    91 	   2.86 	   7.14 	      0 	      0 
+  133.466	 DELIVER	    92 	   2.53 	   8.78 	      0 	      0 
+  140.910	 DELIVER	    93 	  0.693 	   5.38 	      0 	      0 
+  141.568	 DELIVER	    94 	   2.62 	   9.28 	      0 	      0 
+  141.696	 DELIVER	    95 	   2.07 	    8.3 	      0 	      0 
+  142.174	 DELIVER	    96 	   2.33 	      9 	      0 	      0 
+  142.543	 DELIVER	    97 	   2.65 	   7.29 	      0 	      0 
+  142.545	 DELIVER	    98 	   2.19 	   6.61 	      0 	      0 
+  143.168	 DELIVER	    99 	   2.59 	   8.01 	      0 	      0 
+  143.790	 DELIVER	   100 	  0.892 	   6.62 	      0 	      0 
+  143.958	 DELIVER	   101 	  0.693 	    139 	      0 	      0 
+  143.973	 DELIVER	   102 	   2.19 	   6.59 	      0 	      0 
+  144.214	 DELIVER	   103 	  0.464 	   5.27 	      0 	      0 
+  146.062	 DELIVER	   104 	   1.66 	   6.89 	      0 	      0 
+  146.263	 DELIVER	   105 	  0.929 	   6.55 	      0 	      0 
+  146.831	 DELIVER	   106 	   2.31 	   8.64 	      0 	      0 
+  148.726	 DELIVER	   107 	   2.59 	   7.32 	      0 	      0 
+  148.817	 DELIVER	   108 	   1.62 	    8.9 	      0 	      0 
+  151.969	 DELIVER	   109 	  0.694 	   5.46 	      0 	      0 
+  161.550	 DELIVER	   110 	  0.547 	   4.86 	      0 	      0 
+  161.691	 DELIVER	   111 	   1.96 	   6.35 	      0 	      0 
+  166.109	 DELIVER	   112 	  0.869 	   5.68 	      0 	      0 
+  176.936	 DELIVER	   113 	  0.375 	    4.9 	      0 	      0 
+  177.639	 DELIVER	   114 	   1.31 	   6.29 	      0 	      0 
+  179.659	 DELIVER	   115 	  0.699 	   7.18 	      0 	      0 
+  187.085	 DELIVER	   116 	   1.39 	   7.64 	      0 	      0 
+SUMMARY STATISTICS
+SERVICE[ID[7]]:
+ Time Ave. = 	  1.528 Time Sample Var. =	 0.4015
+ Event Ave. =	  1.626 Event Sample Var. =	 0.5573
+ Minimum =	 0.3724
+ Maximum =	  2.993
+SYSTEM[ID[7]]:
+ Time Ave. = 	  8.745 Time Sample Var. =	  188.3
+ Event Ave. =	  10.22 Event Sample Var. =	  359.4
+ Minimum =	  4.065
+ Maximum =	  138.6
+RATIO[0]:
+ Time Ave. = 	      0 Time Sample Var. =	      0
+ Event Ave. =	      0 Event Sample Var. =	      0
+ Minimum =	      0
+ Maximum =	      0
+RATIO[3]:
+ Time Ave. = 	      0 Time Sample Var. =	      0
+ Event Ave. =	      0 Event Sample Var. =	      0
+ Minimum =	      0
+ Maximum =	      0

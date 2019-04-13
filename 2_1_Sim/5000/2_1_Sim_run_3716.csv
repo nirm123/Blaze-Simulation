@@ -1,0 +1,121 @@
+    Time	  Event	 Count	  SERVICE[ID[7]]	   SYSTEM[ID[7]]	        RATIO[0]	          RATIO[3] 
+    8.321	 DELIVER	     1 	   2.48 	   8.25 	      0 	      0 
+   13.788	 DELIVER	     2 	   2.85 	   7.21 	      0 	      0 
+   19.461	 DELIVER	     3 	   2.21 	   7.89 	      0 	      0 
+   19.550	 DELIVER	     4 	   2.11 	   6.36 	      0 	      0 
+   22.646	 DELIVER	     5 	    2.3 	   6.31 	      0 	      0 
+   23.806	 DELIVER	     6 	  0.899 	   5.96 	      0 	      0 
+   24.590	 DELIVER	     7 	   1.22 	   6.11 	      0 	      0 
+   25.771	 DELIVER	     8 	  0.489 	   5.04 	      0 	      0 
+   30.408	 DELIVER	     9 	    2.9 	   8.29 	      0 	      0 
+   31.726	 DELIVER	    10 	  0.738 	   7.11 	      0 	      0 
+   31.943	 DELIVER	    11 	    2.2 	   7.67 	      0 	      0 
+   36.015	 DELIVER	    12 	   2.76 	   7.55 	      0 	      0 
+   39.029	 DELIVER	    13 	  0.517 	   6.15 	      0 	      0 
+   41.816	 DELIVER	    14 	  0.554 	   5.28 	      0 	      0 
+   43.619	 DELIVER	    15 	   1.05 	   8.49 	      0 	      0 
+   47.854	 DELIVER	    16 	   2.62 	   11.7 	      0 	      0 
+   49.354	 DELIVER	    17 	   2.95 	   6.72 	      0 	      0 
+   64.518	 DELIVER	    18 	   1.94 	   7.13 	      0 	      0 
+   66.393	 DELIVER	    19 	   1.94 	   59.3 	      0 	      0 
+   68.571	 DELIVER	    20 	   1.72 	     10 	      0 	      0 
+   68.754	 DELIVER	    21 	  0.424 	   8.86 	      0 	      0 
+   69.486	 DELIVER	    22 	   1.36 	   7.92 	      0 	      0 
+   69.949	 DELIVER	    23 	   2.61 	      7 	      0 	      0 
+   70.096	 DELIVER	    24 	   1.39 	   6.55 	      0 	      0 
+   76.311	 DELIVER	    25 	   2.47 	   12.4 	      0 	      0 
+   77.215	 DELIVER	    26 	   2.06 	   12.7 	      0 	      0 
+   77.665	 DELIVER	    27 	  0.799 	   11.9 	      0 	      0 
+   77.855	 DELIVER	    28 	   2.85 	   10.2 	      0 	      0 
+   78.066	 DELIVER	    29 	   0.56 	   10.1 	      0 	      0 
+   79.849	 DELIVER	    30 	   1.51 	   10.7 	      0 	      0 
+   80.937	 DELIVER	    31 	  0.772 	   11.8 	      0 	      0 
+   81.540	 DELIVER	    32 	   2.48 	   12.2 	      0 	      0 
+   81.711	 DELIVER	    33 	   2.08 	   10.2 	      0 	      0 
+   81.962	 DELIVER	    34 	   1.63 	   9.98 	      0 	      0 
+   86.414	 DELIVER	    35 	   1.74 	   13.5 	      0 	      0 
+   86.466	 DELIVER	    36 	  0.718 	   13.5 	      0 	      0 
+   86.507	 DELIVER	    37 	   2.88 	   11.9 	      0 	      0 
+   86.816	 DELIVER	    38 	   2.91 	   10.5 	      0 	      0 
+   87.019	 DELIVER	    39 	   0.81 	   10.6 	      0 	      0 
+   90.028	 DELIVER	    40 	   2.52 	   10.7 	      0 	      0 
+   90.158	 DELIVER	    41 	   2.67 	   9.91 	      0 	      0 
+   90.624	 DELIVER	    42 	  0.636 	   7.84 	      0 	      0 
+   93.533	 DELIVER	    43 	   1.98 	   9.48 	      0 	      0 
+   95.138	 DELIVER	    44 	   2.85 	   10.6 	      0 	      0 
+   95.369	 DELIVER	    45 	   1.61 	   10.4 	      0 	      0 
+   96.566	 DELIVER	    46 	  0.816 	   8.97 	      0 	      0 
+   99.371	 DELIVER	    47 	  0.832 	   10.6 	      0 	      0 
+  100.077	 DELIVER	    48 	   2.62 	     10 	      0 	      0 
+  103.553	 DELIVER	    49 	   2.66 	   11.8 	      0 	      0 
+  103.779	 DELIVER	    50 	   1.58 	   10.5 	      0 	      0 
+  112.552	 DELIVER	    51 	  0.519 	      6 	      0 	      0 
+  114.109	 DELIVER	    52 	   2.56 	   8.76 	      0 	      0 
+  114.229	 DELIVER	    53 	  0.519 	    108 	      0 	      0 
+  121.785	 DELIVER	    54 	   1.16 	   7.29 	      0 	  0.903 
+  122.368	 DELIVER	    55 	  0.432 	   6.83 	      0 	  0.903 
+  123.840	 DELIVER	    56 	   2.36 	   8.16 	      0 	   1.01 
+  123.851	 DELIVER	    57 	    2.4 	      7 	      0 	   1.01 
+  126.722	 DELIVER	    58 	   2.74 	   9.62 	      0 	   3.05 
+  126.760	 DELIVER	    59 	  0.522 	   8.75 	      0 	   3.05 
+  127.664	 DELIVER	    60 	   2.99 	   10.5 	      0 	   3.05 
+  128.008	 DELIVER	    61 	   1.97 	    8.1 	      0 	   3.05 
+  130.247	 DELIVER	    62 	   1.87 	   10.2 	      0 	   3.05 
+  130.880	 DELIVER	    63 	   2.71 	   10.6 	      0 	   3.05 
+  132.581	 DELIVER	    64 	   1.58 	   11.7 	      0 	   3.75 
+  133.550	 DELIVER	    65 	   2.61 	   10.6 	      0 	   5.28 
+  134.650	 DELIVER	    66 	  0.445 	   11.5 	      0 	   5.28 
+  134.735	 DELIVER	    67 	   0.41 	   11.1 	      0 	   5.28 
+  135.400	 DELIVER	    68 	   1.58 	   11.4 	      0 	   5.28 
+  135.506	 DELIVER	    69 	   1.86 	    7.8 	      0 	   5.28 
+  136.220	 DELIVER	    70 	   2.55 	   7.12 	      0 	   5.28 
+  136.328	 DELIVER	    71 	  0.996 	   6.93 	      0 	   5.28 
+  136.630	 DELIVER	    72 	   2.36 	   6.59 	      0 	   5.28 
+  138.350	 DELIVER	    73 	   2.36 	    132 	      0 	   5.28 
+  139.357	 DELIVER	    74 	  0.515 	   8.66 	      0 	   5.28 
+  141.664	 DELIVER	    75 	  0.803 	   10.3 	      0 	   5.28 
+  142.960	 DELIVER	    76 	  0.803 	    133 	      0 	   5.28 
+  145.752	 DELIVER	    77 	   2.97 	   13.8 	      0 	   5.28 
+  146.052	 DELIVER	    78 	   2.63 	   13.9 	      0 	   5.28 
+  147.567	 DELIVER	    79 	   1.44 	     12 	      0 	   5.28 
+  148.441	 DELIVER	    80 	   1.87 	   10.7 	      0 	   5.28 
+  149.536	 DELIVER	    81 	   2.75 	   11.7 	      0 	   5.28 
+  150.390	 DELIVER	    82 	  0.904 	     12 	      0 	   5.28 
+  152.471	 DELIVER	    83 	   2.73 	   13.6 	      0 	   5.28 
+  153.070	 DELIVER	    84 	   1.44 	   13.4 	      0 	   5.28 
+  153.185	 DELIVER	    85 	   1.61 	   12.6 	      0 	   5.28 
+  153.602	 DELIVER	    86 	  0.449 	   8.77 	      0 	   5.28 
+  155.318	 DELIVER	    87 	  0.565 	   4.07 	      0 	   5.28 
+  157.615	 DELIVER	    88 	   2.46 	   9.44 	      0 	   5.28 
+  161.051	 DELIVER	    89 	  0.693 	   5.89 	      0 	   5.28 
+  161.180	 DELIVER	    90 	    1.1 	   7.32 	      0 	   5.28 
+  161.619	 DELIVER	    91 	   2.61 	   7.56 	      0 	   5.28 
+  162.971	 DELIVER	    92 	   2.24 	   9.21 	      0 	   5.28 
+  163.303	 DELIVER	    93 	   1.04 	   5.09 	      0 	   5.28 
+  171.955	 DELIVER	    94 	   2.67 	   10.2 	      0 	   5.28 
+  172.341	 DELIVER	    95 	   0.84 	   4.67 	      0 	   5.28 
+  175.616	 DELIVER	    96 	   1.43 	   8.19 	      0 	   5.28 
+  176.939	 DELIVER	    97 	   1.94 	   11.4 	      0 	   5.28 
+  179.277	 DELIVER	    98 	   2.14 	   11.3 	      0 	   5.28 
+  179.463	 DELIVER	    99 	   2.54 	   9.42 	      0 	   5.28 
+SUMMARY STATISTICS
+SERVICE[ID[7]]:
+ Time Ave. = 	  1.833 Time Sample Var. =	 0.8037
+ Event Ave. =	  1.737 Event Sample Var. =	 0.7092
+ Minimum =	 0.4097
+ Maximum =	  2.985
+SYSTEM[ID[7]]:
+ Time Ave. = 	   13.8 Time Sample Var. =	  557.7
+ Event Ave. =	   13.3 Event Sample Var. =	  418.7
+ Minimum =	  4.072
+ Maximum =	  132.7
+RATIO[0]:
+ Time Ave. = 	      0 Time Sample Var. =	      0
+ Event Ave. =	      0 Event Sample Var. =	      0
+ Minimum =	      0
+ Maximum =	      0
+RATIO[3]:
+ Time Ave. = 	  2.452 Time Sample Var. =	  6.665
+ Event Ave. =	  2.129 Event Sample Var. =	  6.076
+ Minimum =	      0
+ Maximum =	  5.282
