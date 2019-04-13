@@ -1,4 +1,4 @@
-# Blaze-Simulation
+# Blaze Simulation
 Repository of files relating to a simulation of Blaze Pizza in the Illini Union (IE 413 Final Project).
 * 2\_1\_Sim - Simulation with 2 servers adding toppings and 1 server finishing/delivering (Current)
     * 1000 - Output of 1000 trials
