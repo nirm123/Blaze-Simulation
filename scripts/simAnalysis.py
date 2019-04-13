@@ -1,5 +1,6 @@
 import csv
 import math
+from scipy import stats
 
 # Number of trials
 num = 1000
@@ -32,6 +33,9 @@ average_var = 0
 ratio_var4 = 0
 ratio_var8 = 0
 cust_var = 0
+
+# Variable for confidence interval
+student = stats.t.ppf(1 - 0.025, (num - 1))
 
 # Iterate through all trials
 for i in range(num):
@@ -120,18 +124,26 @@ file_object.write("AVG: " + str(calculated_average) + "\n")
 for i in grand_average:
     average_var += (i - calculated_average)**2
 average_var /= (num - 1)
-file_object.write("VAR: " + str(average_var) + "\n\n")
+file_object.write("VAR: " + str(average_var) + "\n")
+
+# CI for sojourn
+student_delta = student*(math.sqrt(average_var)/math.sqrt(num))
+file_object.write("CI: [" + str(calculated_average - student_delta) + ", " + str(calculated_average + student_delta) + "]\n\n")
 
 # Calculated average number of customers spending more than 15 minutes in a system
 calculated_15 = (sum(grand_cust15)/num)
 file_object.write("Percentage of customers spending more than 15 minutes in the system:\n")
 file_object.write("AVG: " + str(calculated_15) + "\n")
 
-# Calculate variance of sojourn time
+# Calculate variance for customer spending more than 15 minutes in the system
 for i in grand_cust15:
     cust_var += (i - calculated_15)**2
 cust_var /= (num - 1)
-file_object.write("VAR: " + str(cust_var) + "\n\n")
+file_object.write("VAR: " + str(cust_var) + "\n")
+
+# CI for customers spending more than 15 minutes
+student_delta = student*(math.sqrt(cust_var)/math.sqrt(num))
+file_object.write("CI: [" + str(calculated_15 - student_delta) + ", " + str(calculated_15 + student_delta) + "]\n\n")
 
 # Calculated ratio of time with line greater than 4
 calculated_ratio4 = sum(grand_ratio4)/num
@@ -142,7 +154,11 @@ file_object.write("AVG: " + str(calculated_ratio4) + "\n")
 for i in grand_ratio4:
     ratio_var4 += (i - calculated_ratio4)**2
 ratio_var4 /= (num - 1)
-file_object.write("VAR: " + str(ratio_var4) + "\n\n")
+file_object.write("VAR: " + str(ratio_var4) + "\n")
+
+# CI for time line greater than 4
+student_delta = student*(math.sqrt(ratio_var4)/math.sqrt(num))
+file_object.write("CI: [" + str(calculated_ratio4 - student_delta) + ", " + str(calculated_ratio4 + student_delta) + "]\n\n")
 
 # Calculated ratio of time with line greater than 8
 calculated_ratio8 = sum(grand_ratio8)/num
@@ -153,7 +169,11 @@ file_object.write("AVG: " + str(calculated_ratio8) + "\n")
 for i in grand_ratio8:
     ratio_var8 += (i - calculated_ratio8)**2
 ratio_var8 /= (num - 1)
-file_object.write("VAR: " + str(ratio_var8))
+file_object.write("VAR: " + str(ratio_var8) + "\n")
+
+# CI for time line greater than 8
+student_delta = student*(math.sqrt(ratio_var8)/math.sqrt(num))
+file_object.write("CI: [" + str(calculated_ratio8 - student_delta) + ", " + str(calculated_ratio8 + student_delta) + "]")
 
 # Close file
 file_object.close()
