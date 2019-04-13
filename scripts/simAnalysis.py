@@ -5,18 +5,21 @@ import math
 num = 1000
 
 # Which sigma model
-version = "2_1_Sim"
+version = "3_1_Sim"
 
 # Complete filepath/filename
 dir_file = "../" + str(version) + "/" + str(num) + "/"
 file_nam = version + "_run_"
 
 # Alpha/Mean for variance reduction with control variates 
-alpha = -1
+alpha = -4.4
 service = 1.68333333334
 
 # Averages of sojourn time for each trial
 grand_average = []
+
+# Ratio of customers who wait more than 15 minutes
+grand_cust15 = []
 
 # Ratio of time queue 0 is longer than 4 for each trial
 grand_ratio4 = []
@@ -28,6 +31,7 @@ grand_ratio8 = []
 average_var = 0
 ratio_var4 = 0
 ratio_var8 = 0
+cust_var = 0
 
 # Iterate through all trials
 for i in range(num):
@@ -36,6 +40,9 @@ for i in range(num):
 
     # Accumulator for average
     average = 0
+
+    # Accumulator for customers waiting more than 15
+    cust = 0
     
     # Variable for ratio 4
     ratio4 = 0
@@ -67,7 +74,7 @@ for i in range(num):
             continue
 
         # Ignore customers with sojourn time longer than 35 (error in simulation)
-        if float(row[4]) > 30:
+        if float(row[4]) > 40:
             continue
 
         # Running sum for average
@@ -85,42 +92,68 @@ for i in range(num):
         # Keep count of number of customers
         count += 1
 
+        # Keep count of customers spending more than 15 minutes in system
+        if float(row[4]) > 15:
+            cust += 1
+
     # Calculate average
     average /= count
+
+    # Calculate average customers
+    cust /= count
     
-    # Append average, ratio4, and ratio8
+    # Append average, ratio4, cust15, and ratio8
     grand_average.append(average)
     grand_ratio4.append(ratio4/max_time)
     grand_ratio8.append(ratio8/max_time)
+    grand_cust15.append(cust)
+
+# Open file
+file_object = open("../" + version + "/" + str(num) + "_stats.txt", "w")
 
 # Calculated average sojourn time
 calculated_average = (sum(grand_average)/num)
-print(calculated_average)
+file_object.write("Average sojourn time of customer:\n")
+file_object.write("AVG: " + str(calculated_average) + "\n")
 
 # Calculate variance of sojourn time
 for i in grand_average:
     average_var += (i - calculated_average)**2
 average_var /= (num - 1)
-print(average_var)
-print()
+file_object.write("VAR: " + str(average_var) + "\n\n")
+
+# Calculated average number of customers spending more than 15 minutes in a system
+calculated_15 = (sum(grand_cust15)/num)
+file_object.write("Percentage of customers spending more than 15 minutes in the system:\n")
+file_object.write("AVG: " + str(calculated_15) + "\n")
+
+# Calculate variance of sojourn time
+for i in grand_cust15:
+    cust_var += (i - calculated_15)**2
+cust_var /= (num - 1)
+file_object.write("VAR: " + str(cust_var) + "\n\n")
 
 # Calculated ratio of time with line greater than 4
 calculated_ratio4 = sum(grand_ratio4)/num
-print(calculated_ratio4)
+file_object.write("Percentage of time the initial queue is longer than 4:\n")
+file_object.write("AVG: " + str(calculated_ratio4) + "\n")
 
 # Calculate variance of time with line greater than 4
 for i in grand_ratio4:
     ratio_var4 += (i - calculated_ratio4)**2
 ratio_var4 /= (num - 1)
-print(ratio_var4)
-print()
+file_object.write("VAR: " + str(ratio_var4) + "\n\n")
 
 # Calculated ratio of time with line greater than 8
 calculated_ratio8 = sum(grand_ratio8)/num
-print(calculated_ratio8)
+file_object.write("Percentage of time the initial queue is longer than 8:\n")
+file_object.write("AVG: " + str(calculated_ratio8) + "\n")
 
 # Calculate variance of time with line greater than 8
 for i in grand_ratio8:
     ratio_var8 += (i - calculated_ratio8)**2
 ratio_var8 /= (num - 1)
-print(ratio_var8)
+file_object.write("VAR: " + str(ratio_var8))
+
+# Close file
+file_object.close()

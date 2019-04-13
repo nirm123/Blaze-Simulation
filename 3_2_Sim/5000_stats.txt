@@ -1,0 +1,15 @@
+Average sojourn time of customer:
+AVG: 7.6764186249310615
+VAR: 0.20788165155111668
+
+Percentage of customers spending more than 15 minutes in the system:
+AVG: 0.002610736357703671
+VAR: 0.00011384010119457862
+
+Percentage of time the initial queue is longer than 4:
+AVG: 0.023352238582560313
+VAR: 0.0009300053438830367
+
+Percentage of time the initial queue is longer than 8:
+AVG: 0.002340767306473504
+VAR: 9.92487374068771e-05
