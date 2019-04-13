@@ -8,12 +8,12 @@ Model Description:
 Output File:        BLAZE.out
 Output Plot Style:  NOAUTO_FIT
 Run Mode:           HI_SPEED
-Trace Vars:         SERVICE[ID[7]],SYSTEM[ID[7]],RATIO[0],RATIO[3]
+Trace Vars:         QUEUE[0],SERVICE[ID[7]],SYSTEM[ID[7]],RATIO[0],RATIO[3]
 Random Number Seed: 970
 Initial Values:     
 Ending Condition:   STOP_ON_TIME
 Ending Time:        1000.000
-Trace Events:       
+Trace Events:       ALL EVENTS TRACED
 Hide Edges:         
 
 
@@ -110,7 +110,7 @@ Bitmap(Inactive):
 Bitmap(Active):   
 Use Flowchart Shapes:   0
 Use Opaque Bitmaps:   0
-Location:         X:  0.55;  Y:  1.87;  Z: -1.00;
+Location:         X:  0.56;  Y:  1.87;  Z: -1.00;
 Local Trace:      
 Trace Location:   Bottom
 
@@ -123,7 +123,7 @@ Bitmap(Inactive):
 Bitmap(Active):   
 Use Flowchart Shapes:   0
 Use Opaque Bitmaps:   0
-Location:         X:  1.24;  Y:  1.87;  Z: -1.00;
+Location:         X:  1.25;  Y:  1.87;  Z: -1.00;
 Local Trace:      
 Trace Location:   Bottom
 
@@ -136,7 +136,7 @@ Bitmap(Inactive):
 Bitmap(Active):   
 Use Flowchart Shapes:   0
 Use Opaque Bitmaps:   0
-Location:         X:  1.23;  Y:  1.47;  Z: -1.00;
+Location:         X:  1.24;  Y:  1.47;  Z: -1.00;
 Local Trace:      
 Trace Location:   Bottom
 
@@ -149,7 +149,7 @@ Bitmap(Inactive):
 Bitmap(Active):   
 Use Flowchart Shapes:   0
 Use Opaque Bitmaps:   0
-Location:         X:  1.23;  Y:  0.95;  Z: -1.00;
+Location:         X:  1.24;  Y:  0.95;  Z: -1.00;
 Local Trace:      
 Trace Location:   Bottom
 
