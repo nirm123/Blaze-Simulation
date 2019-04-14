@@ -1,7 +1,7 @@
 @echo OFF
 SET MODEL_NAME=BLAZE
 
-cd "C:\Users\nirma\Documents\Blaze\2_2_Sim\"
+cd "C:\Users\nirma\Documents\Blaze\2_2_Sim\Sigma\"
 
 REM Basic config defines
 SET STD_C_INCLUDES=C:\PROGRA~2\BIOPRO~1\Sigma\Libs\

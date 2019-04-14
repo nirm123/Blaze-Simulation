@@ -13,7 +13,7 @@ Random Number Seed: 970
 Initial Values:     
 Ending Condition:   STOP_ON_TIME
 Ending Time:        1000.000
-Trace Events:       ALL EVENTS TRACED
+Trace Events:       DELIVER
 Hide Edges:         
 
 

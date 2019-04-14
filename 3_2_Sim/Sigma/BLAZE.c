@@ -11,12 +11,12 @@ Model Description:
 Output File:        BLAZE.out
 Output Plot Style:  NOAUTO_FIT
 Run Mode:           HI_SPEED
-Trace Vars:         SERVICE[ID[7]],SYSTEM[ID[7]],RATIO[0],RATIO[3]
+Trace Vars:         SERVICE[ID[7]],SYSTEM[ID[7]],RATIO[0],RATIO[3],WAIT[ID[7]]
 Random Number Seed: 970
 Initial Values:     
 Ending Condition:   STOP_ON_TIME
 Ending Time:        1000.000
-Trace Events:       INIT,DELIVER
+Trace Events:       DELIVER
 Hide Edges:         
 
 */
@@ -43,6 +43,7 @@ long   QUEUE[2];	/***    ***/
 long   SERVER[2];	/***    ***/
 long   ID[10];	/***    ***/
 double RATIO[6];	/***    ***/
+double WAIT[1000];	/***    ***/
 
 /*   EVENT FUNCTIONS   */
 enum
@@ -95,7 +96,6 @@ int main(int argc, char** argv)
                break;
 
       case INIT_event:  INIT();
-               event_trace("INIT",event_count[next_event]);
                break;
 
       case ARR_event:  ARR();
@@ -139,9 +139,11 @@ event_trace(const char * name_of_event,const long count)
   c_sampst(RATIO[0], 3, 0);
   c_timest(RATIO[3], 4, 0);
   c_sampst(RATIO[3], 4, 0);
+  c_timest(WAIT[ID[7]], 5, 0);
+  c_sampst(WAIT[ID[7]], 5, 0);
   if(trace_flag) fprintf(output_fp, "%9.3f\t %6s\t%6d ",current_time,name_of_event,count);
-  if(trace_flag) fprintf(output_fp, "	%7.3g 	%7.3g 	%7.3g 	%7.3g \n"
-,(double)SERVICE[ID[7]], (double)SYSTEM[ID[7]], (double)RATIO[0], (double)RATIO[3]);
+  if(trace_flag) fprintf(output_fp, "	%7.3g 	%7.3g 	%7.3g 	%7.3g 	%7.3g \n"
+,(double)SERVICE[ID[7]], (double)SYSTEM[ID[7]], (double)RATIO[0], (double)RATIO[3], (double)WAIT[ID[7]]);
 }
 
 
@@ -276,7 +278,8 @@ if (trace_flag)
    fprintf(output_fp,"	  SERVICE[ID[7]]");
    fprintf(output_fp,"	   SYSTEM[ID[7]]");
    fprintf(output_fp,"	        RATIO[0]");
-   fprintf(output_fp,"	          RATIO[3] ");
+   fprintf(output_fp,"	        RATIO[3]");
+   fprintf(output_fp,"	       WAIT[ID[7]] ");
    fprintf(output_fp,"\n");
    }
   /* Initialize CSIGLIB variables and files */
@@ -331,6 +334,16 @@ run_end()
    fprintf(output_fp, "RATIO[3]:\n Time Ave. = \t%7.4g Time Sample Var. =\t%7.4g\n", transfer[4], transfer[7]);
    printf("RATIO[3]:\n Time Ave. = 	%7.4g Time Sample Var. = 	%7.4g\n", transfer[4], transfer[7]);
   c_sampst(RATIO[3], 4, 1);
+   fprintf(output_fp, " Event Ave. =\t%7.4g Event Sample Var. =\t%7.4g\n", transfer[4], transfer[8]);
+   fprintf(output_fp, " Minimum =\t%7.4g\n", transfer[7]);
+   fprintf(output_fp, " Maximum =\t%7.4g\n", transfer[6]);
+   printf(" Event Ave.  = 	%7.4g Event Sample Var.= 	%7.4g\n", transfer[4], transfer[8]);
+   printf(" Minimum  = 	%7.4g\n", transfer[7]);
+   printf(" Maximum  = 	%7.4g\n", transfer[6]);
+  c_timest(WAIT[ID[7]], 5, 1);
+   fprintf(output_fp, "WAIT[ID[7]]:\n Time Ave. = \t%7.4g Time Sample Var. =\t%7.4g\n", transfer[4], transfer[7]);
+   printf("WAIT[ID[7]]:\n Time Ave. = 	%7.4g Time Sample Var. = 	%7.4g\n", transfer[4], transfer[7]);
+  c_sampst(WAIT[ID[7]], 5, 1);
    fprintf(output_fp, " Event Ave. =\t%7.4g Event Sample Var. =\t%7.4g\n", transfer[4], transfer[8]);
    fprintf(output_fp, " Minimum =\t%7.4g\n", transfer[7]);
    fprintf(output_fp, " Maximum =\t%7.4g\n", transfer[6]);
@@ -420,6 +433,7 @@ int  _edge_condition[2];
   RATIO[2]=(QUEUE[0]>7);
   RATIO[4]=RATIO[4]+CLK*(QUEUE[0]==4&&RATIO[5]==0);
   RATIO[5]=(QUEUE[0]>3);
+  WAIT[ID[0]]=CLK;
 
   /* Evaluate edge conditions now so that they will*/
   /* not be changed by preemptive event execution  */
@@ -472,6 +486,7 @@ int  _edge_condition[2];
   RATIO[3]=RATIO[3]+(CLK-RATIO[4])*(QUEUE[0]==3);
   RATIO[4]=RATIO[4]*(QUEUE[0]!=3);
   RATIO[5]=(RATIO[4]!=0);
+  WAIT[ID[1]]=CLK-WAIT[ID[1]];
 
   /* Evaluate edge conditions now so that they will*/
   /* not be changed by preemptive event execution  */
