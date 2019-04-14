@@ -8,12 +8,12 @@ Model Description:
 Output File:        BLAZE.out
 Output Plot Style:  NOAUTO_FIT
 Run Mode:           HI_SPEED
-Trace Vars:         SERVICE[ID[7]],SYSTEM[ID[7]],RATIO[0],RATIO[3]
+Trace Vars:         SERVICE[ID[7]],SYSTEM[ID[7]],RATIO[0],RATIO[3],WAIT[ID[7]]
 Random Number Seed: 970
 Initial Values:     
 Ending Condition:   STOP_ON_TIME
 Ending Time:        1000.000
-Trace Events:       DELIVER
+Trace Events:       ALL EVENTS TRACED
 Hide Edges:         
 
 
@@ -57,6 +57,12 @@ Description:
 Type:          REAL
 Size:          6
 
+     State Variable #7
+Name:          WAIT
+Description:   
+Type:          REAL
+Size:          1000
+
 
 
           VERTICES
@@ -78,7 +84,7 @@ Trace Location:   Bottom
      Vertex #2
 Name:             ARR
 Description:      Arrival of customers into the system
-State Changes:    ID[0]=ID[0]+1,QUEUE[0]=QUEUE[0]+1,SYSTEM[ID[0]]=CLK,RATIO[1]=RATIO[1]+CLK*(QUEUE[0]==8&RATIO[2]==0),RATIO[2]=(QUEUE[0]>7),RATIO[4]=RATIO[4]+CLK*(QUEUE[0]==4&RATIO[5]==0),RATIO[5]=(QUEUE[0]>3)
+State Changes:    ID[0]=ID[0]+1,QUEUE[0]=QUEUE[0]+1,SYSTEM[ID[0]]=CLK,RATIO[1]=RATIO[1]+CLK*(QUEUE[0]==8&RATIO[2]==0),RATIO[2]=(QUEUE[0]>7),RATIO[4]=RATIO[4]+CLK*(QUEUE[0]==4&RATIO[5]==0),RATIO[5]=(QUEUE[0]>3),WAIT[ID[0]]=CLK
 Parameter(s):     
 Bitmap(Inactive): 
 Bitmap(Active):   
@@ -91,7 +97,7 @@ Trace Location:   Bottom
      Vertex #3
 Name:             TOPPING
 Description:      Begin process of creating pizza.
-State Changes:    QUEUE[0]=QUEUE[0]-1,SERVER[0]=SERVER[0]-1,ID[2]=ID[2]+1,SERVICE[ID[1]]=CLK,RATIO[0]=RATIO[0]+(CLK-RATIO[1])*(QUEUE[0]==7),RATIO[1]=RATIO[1]*(QUEUE[0]!=7),RATIO[2]=(RATIO[1]!=0),RATIO[3]=RATIO[3]+(CLK-RATIO[4])*(QUEUE[0]==3),RATIO[4]=RATIO[4]*(QUEUE[0]!=3),RATIO[5]=(RATIO[4]!=0)
+State Changes:    QUEUE[0]=QUEUE[0]-1,SERVER[0]=SERVER[0]-1,ID[2]=ID[2]+1,SERVICE[ID[1]]=CLK,RATIO[0]=RATIO[0]+(CLK-RATIO[1])*(QUEUE[0]==7),RATIO[1]=RATIO[1]*(QUEUE[0]!=7),RATIO[2]=(RATIO[1]!=0),RATIO[3]=RATIO[3]+(CLK-RATIO[4])*(QUEUE[0]==3),RATIO[4]=RATIO[4]*(QUEUE[0]!=3),RATIO[5]=(RATIO[4]!=0),WAIT[ID[1]]=CLK-WAIT[ID[1]]
 Parameter(s):     ID[1]
 Bitmap(Inactive): 
 Bitmap(Active):   
@@ -110,7 +116,7 @@ Bitmap(Inactive):
 Bitmap(Active):   
 Use Flowchart Shapes:   0
 Use Opaque Bitmaps:   0
-Location:         X:  0.55;  Y:  1.87;  Z: -1.00;
+Location:         X:  0.54;  Y:  1.87;  Z: -1.00;
 Local Trace:      
 Trace Location:   Bottom
 
@@ -123,7 +129,7 @@ Bitmap(Inactive):
 Bitmap(Active):   
 Use Flowchart Shapes:   0
 Use Opaque Bitmaps:   0
-Location:         X:  1.24;  Y:  1.87;  Z: -1.00;
+Location:         X:  1.23;  Y:  1.87;  Z: -1.00;
 Local Trace:      
 Trace Location:   Bottom
 
@@ -136,7 +142,7 @@ Bitmap(Inactive):
 Bitmap(Active):   
 Use Flowchart Shapes:   0
 Use Opaque Bitmaps:   0
-Location:         X:  1.23;  Y:  1.47;  Z: -1.00;
+Location:         X:  1.22;  Y:  1.47;  Z: -1.00;
 Local Trace:      
 Trace Location:   Bottom
 
@@ -149,7 +155,7 @@ Bitmap(Inactive):
 Bitmap(Active):   
 Use Flowchart Shapes:   0
 Use Opaque Bitmaps:   0
-Location:         X:  1.23;  Y:  0.95;  Z: -1.00;
+Location:         X:  1.22;  Y:  0.95;  Z: -1.00;
 Local Trace:      
 Trace Location:   Bottom
 

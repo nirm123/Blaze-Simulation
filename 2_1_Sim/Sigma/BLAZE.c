@@ -16,7 +16,7 @@ Random Number Seed: 970
 Initial Values:     
 Ending Condition:   STOP_ON_TIME
 Ending Time:        1000.000
-Trace Events:       DELIVER
+Trace Events:       ALL EVENTS TRACED
 Hide Edges:         
 
 */
@@ -43,6 +43,7 @@ long   QUEUE[2];	/***    ***/
 long   SERVER[2];	/***    ***/
 long   ID[10];	/***    ***/
 double RATIO[6];	/***    ***/
+double WAIT[1000];	/***    ***/
 
 /*   EVENT FUNCTIONS   */
 enum
@@ -95,21 +96,27 @@ int main(int argc, char** argv)
                break;
 
       case INIT_event:  INIT();
+               event_trace("INIT",event_count[next_event]);
                break;
 
       case ARR_event:  ARR();
+               event_trace("ARR",event_count[next_event]);
                break;
 
       case TOPPING_event:  TOPPING();
+               event_trace("TOPPING",event_count[next_event]);
                break;
 
       case COOK_event:  COOK();
+               event_trace("COOK",event_count[next_event]);
                break;
 
       case READY_event:  READY();
+               event_trace("READY",event_count[next_event]);
                break;
 
       case FINISH_event:  FINISH();
+               event_trace("FINISH",event_count[next_event]);
                break;
 
       case DELIVER_event:  DELIVER();
@@ -117,6 +124,7 @@ int main(int argc, char** argv)
                break;
 
       case STOP_event:  STOP();
+               event_trace("STOP",event_count[next_event]);
                break;
 
       }
